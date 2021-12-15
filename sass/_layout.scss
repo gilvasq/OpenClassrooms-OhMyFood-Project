@@ -1,0 +1,240 @@
+/*START HEADER ELEMENTS*/
+.header {
+  &__logobox {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    &-logo {
+      width: 20rem;
+    }
+  }
+  &__locationbox {
+    display: flex;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/gradientbar_sm.png);
+    &-mapmarker {
+      font-size: 2rem;
+      margin-right: 0.75rem;
+    }
+  }
+}
+
+/*END HEADER ELEMENTS*/
+
+/*BEGIN BOOK MENU SECTION ELEMENTS*/
+
+.bookmenubox {
+  width: 100%;
+  height: 17.5rem;
+  margin: 0 auto;
+  padding-top: 0.5rem;
+  background-color: #f2f2f2;
+  &__text {
+    text-align: center;
+    width: 30rem;
+    height: 7.5rem;
+    margin: 0 auto;
+    padding: 1.5rem 0 1.5rem 0;
+    background-color: #f2f2f2;
+  }
+}
+
+/*END BOOK MENU SECTION ELEMENTS*/
+
+/*BEGIN HOW IT WORKS SECTION ELEMENTS*/
+
+.howitworksbox {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 1.75rem;
+  max-width: 120rem;
+  &__header {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    width: 100%;
+  }
+}
+
+/*END HOW IT WORKS SECTION ELEMENTS*/
+
+/*BEGIN RESTAURANTS SECTION ELEMENTS*/
+
+.restaurantsbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #f2f2f2;
+  width: 100%;
+  padding-bottom: 2rem;
+  &__header {
+    display: flex;
+    justify-content: center;
+    font-size: 1.25rem;
+    padding-top: 1rem;
+    width: 100%;
+  }
+}
+
+/*END RESTAURANTS SECTION ELEMENTS*/
+
+/*START FOOTER ELEMENTS*/
+
+.footer {
+  width: 100%;
+  height: 100vh;
+  padding: 1rem 0 6rem 0;
+  background-color: rgb(46, 45, 45);
+}
+
+.footerbox {
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #ffffff;
+  margin: 0 auto;
+  width: 32.5rem;
+  height: 100%;
+  &__mainLogo {
+    margin: 1rem 0 0.25rem 1rem;
+    width: 14rem;
+  }
+  &__suggiconstext-utensils {
+    margin-left: 1rem;
+    margin-right: 0.65rem;
+  }
+  &__suggiconstext {
+    display: flex;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    padding-bottom: 0.25em;
+  }
+  &__partnicontext-handshake {
+    margin-left: 1rem;
+    margin-right: 0.65rem;
+  }
+  &__partnicontext {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    padding-bottom: 0.25rem;
+    width: 32.5rem;
+  }
+  &__legalcontact p {
+    margin-left: 1rem;
+    line-height: 2rem;
+  }
+}
+
+/*END FOOTER ELEMENTS*/
+
+/*BEGIN SEPARATE RESTAURANT PAGE ELEMENTS*/
+
+/*BEGIN RESTAURANT HEADER ELEMENTS*/
+
+.header__logoFullWidth {
+  &-centerbox {
+    display: flex;
+    margin: 0 auto;
+    padding: 1rem 0.2rem 1rem 0.2rem;
+    width: 32.5rem;
+  }
+  &-homearrow {
+    width: 2rem;
+    margin: 0.5rem 2.5rem 0 1rem;
+  }
+  &-logo {
+    width: 20rem;
+  }
+}
+.header__restpicbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  //background-color: #9356dc;
+  background-image: linear-gradient(#844dc6, #9356dc);
+  &-pic {
+    width: 34.5rem;
+    height: 20rem;
+    object-fit: cover;
+  }
+  &-name {
+    display: flex;
+    justify-content: space-between;
+    width: 34.5rem;
+    height: 6rem;
+    border-top-right-radius: 2.5rem;
+    border-top-left-radius: 2.5rem;
+    margin-top: -3rem;
+    background-color: #f2f2f2;
+  }
+  &-text {
+    font-family: "Shrikhand";
+    font-size: 2.5rem;
+    padding-top: 0.75rem;
+    padding-left: 1rem;
+  }
+  &-heart {
+    display: flex;
+    position: relative;
+    right: 2.5rem;
+    top: 0.3rem;
+    width: 2rem;
+    height: 5rem;
+  }
+}
+
+/*END RESTAURANT HEADER ELEMENTS*/
+
+/*BEGIN RESTAURANT MENU ELEMENTS*/
+
+.menusbox {
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #f2f2f2;
+  }
+  &__columnbox-column {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    margin: 0.75rem 2rem;
+    padding-bottom: 0;
+  }
+  &__header {
+    position: relative;
+    font-weight: 300;
+    font-size: 2rem;
+    margin: 0 auto;
+    padding-bottom: 0.4rem;
+    width: 32.5rem;
+    border: 0.2rem solid #f2f2f2;
+    &--greenline {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 6rem;
+      height: 3.5rem;
+      border-bottom: 0.2rem solid #99e2d0;
+    }
+  }
+}
+
+/*BEGIN ORDER BUTTON ELEMENTS*/
+
+.orderButton-box {
+  background-color: #f2f2f2;
+  height: 9rem;
+  padding-top: 1.5rem;
+}
+
+/*END ORDER BUTTON ELEMENTS*/
