@@ -1,277 +1,269 @@
-/*START INTRO SPINNER ELEMENTS*/
+/* Menu pages - order button */
 
-.spinnerbox {
+.btn {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-family: Courgette;
+  color: #fdfcfa;
+  font-size: 2.2rem;
+  text-shadow: 0.2rem 0.2rem #2c2f33;
+  background-image: linear-gradient(
+      rgba(94, 31, 83, 0.9),
+      rgba(94, 31, 83, 0.9)
+    ),
+    url("../images/spikes_dark.png");
+  margin-top: 1rem;
   justify-content: center;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  animation: spinner_container_fadeout 4500ms;
-  &__graphic {
-    opacity: 0;
-    animation: spinner-load 4500ms;
+  align-items: center;
+  border-radius: 500px;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.4);
 
-    font-size: 10rem;
-    color: #9356dc;
+  /* Home page - explore button */
+
+  &__explore-rest {
+    border: 3px solid #fdfcfa;
+    height: 7rem;
+    width: 28rem;
+  }
+
+  /* Menu pages - order button */
+
+  &__order-menu {
+    border: 3px solid #e0d7fc;
+    height: 5rem;
+    width: 20rem;
+  }
+
+  &__order-menu-box {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
   }
 }
 
-/*END INTRO SPINNER ELEMENTS*/
-
-/*START GRADIENT BUTTON*/
-
-.gradientbutton {
-  width: 20rem;
-  height: 4rem;
-  margin: 2rem auto 1rem auto;
-  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
-  box-shadow: 0.3rem 0.3rem 0.5rem 0.3rem #dddcdc;
-  border-radius: 3rem;
-  &__text {
+.card-how {
+  display: flex;
+  box-shadow: 0 0 2rem #e0d7fc;
+  background-color: #fdfcfa;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  border-radius: 4.5rem;
+  border: 1px solid #ddd;
+  width: 33.5rem;
+  height: 6rem;
+  margin: 2rem;
+  &-number {
     display: flex;
-    flex-direction: column;
+    position: absolute;
+    font-family: Courgette;
+    color: #fdfcfa;
+    font-size: 2.5rem;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
-    color: #ffffff;
-    height: 4rem;
+    background-image: linear-gradient(#6b245e, #5e1f52);
+    top: -0.75rem;
+    left: -0.5rem;
+    border-radius: 50%;
+    border: 3px solid #fdfcfa;
+    box-shadow: 0 0 1rem #bdb5d4;
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  &-icon {
+    text-align: center;
+    color: #a696df;
+    font-size: 3rem;
+    margin: 4rem 1.25rem 4rem 5rem;
+    width: 4.5rem;
+  }
+
+  &-text {
+    font-family: Courgette;
+    color: #2c2f33;
+    font-size: 2rem;
+    margin-right: 4rem;
   }
 }
 
-/*END GRADIENT BUTTON*/
+// Home page restaurant cards
 
-/*START NARROW SHADOW BOXES*/
-
-.shadowboxNarrow {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 1rem auto 1rem auto;
-  width: 32rem;
-  height: 5.5rem;
-  background-color: #f2f2f2;
-  border-radius: 1.8rem;
-  box-shadow: 0.3rem 0.3rem 0.5rem 0.3rem #dddcdc;
-  &__num {
+.card {
+  &-restaurant {
     display: flex;
-    align-content: center;
+    flex-direction: column;
+    background-color: #fdfcfa;
+
+    margin: 1.5rem;
+    width: 25rem;
+    border: 3px solid #fdfcfa;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.6);
+  }
+
+  &-restaurant-img-box {
+    display: flex;
+    height: 14.5rem;
+  }
+
+  &-restaurant-img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &-restaurant-caption {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    background-color: #fdfcfa;
+    height: 6rem;
+    padding: 1rem;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+  }
+
+  &-restaurant-caption-text {
+    font-family: Rubik;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #772668;
+  }
+
+  &-restaurant-caption-grey {
+    color: #2c2f33;
+  }
+
+  &-restaurant-caption-heart-ol {
+    position: absolute;
+    top: 0.75rem;
+    left: 21rem;
+    color: #2c2f33;
+    background-color: #fdfcfa;
     width: 2.5rem;
-    margin-left: -1rem;
-    margin-right: 1rem;
+    z-index: 10;
+    opacity: 1;
+    transition: all 0.5s;
   }
-  &__icon {
-    display: flex;
-    font-size: 2.5rem;
-    color: #767676;
-    margin-right: 1.5rem;
-    &--phone {
-      font-size: 2.5rem;
-      color: #767676;
-      margin-right: 0.75rem;
-    }
+
+  &-restaurant-caption-heart {
+    position: absolute;
+    top: 0.75rem;
+    left: 21rem;
+    color: #772668;
+    width: 2.5rem;
+    opacity: 1;
   }
-  &__text {
-    font-size: 1.5rem;
-  }
-  &:hover {
-    background-color: #fffafa;
+
+  &-restaurant-caption-heart-ol:hover {
+    opacity: 0;
+    background-color: transparent;
     cursor: pointer;
   }
 }
 
-/*END NARROW SHADOW BOXES*/
-
-/*START LARGE SHADOW BOXES*/
-
-.shadowboxLarge {
-  display: flex;
-  flex-direction: column;
-  margin: 1.75rem 1.75rem 1.75rem 1.75rem;
-  width: 32.5rem;
-  height: 22.5rem;
-  background-color: #ffffff;
-  border-radius: 1rem;
-  box-shadow: 0 0 0.5rem 0.25rem #dddcdc;
-  transition: all 0.35s;
-  z-index: 45;
-  &__photo {
-    width: 32.5rem;
-    height: 16.5rem;
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
-    object-fit: cover;
-  }
-  &__caption-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 31.5rem;
-    height: 4.8rem;
-    background-color: #ffffff;
-  }
-  &__captiontext {
-    display: flex;
-    flex-direction: column;
-    padding-left: 0.75rem;
-    margin-bottom: 0.75rem;
-  }
-  &__captionheart {
-    position: absolute;
-    margin-left: 28.5rem;
-    margin-top: 0.95rem;
-  }
-  &__captiongradheart {
-    position: absolute;
-    margin-left: 28.5rem;
-    margin-top: 0.95rem;
-    opacity: 0;
-    z-index: 4;
-    &:hover {
-      transition: opacity 500ms;
-      opacity: 1;
-    }
-  }
-  &__captionheartsvg {
-    z-index: 2;
-    width: 2.5rem;
-  }
-  &:hover {
-    box-shadow: 0 0 1rem 0.85rem rgba(221, 220, 220, 0.733);
-    transform: translateY(-0.5rem);
-  }
-}
-
-/*END LARGE SHADOW BOXES*/
-
-/*START MENU CARDS FOR MENU PAGES*/
+// Menu page restaurant cards
 
 .menucard {
   display: flex;
-  margin: 1rem auto 1rem auto;
-  width: 32.5rem;
-  height: 8rem;
-  border-radius: 1.5rem;
-  box-shadow: 0.3rem 0.3rem 0.5rem 0.3rem #dddcdc;
-  &-box {
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-    justify-content: space-between;
-    width: 32.5rem;
-    height: 8rem;
-    border-radius: 1.5rem;
-    background-color: #ffffff;
+  flex-direction: row;
+  height: 9rem;
+  background-color: #e0d7fc;
+  overflow: hidden;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.4);
+  margin: 1rem 0;
+  width: 30rem;
+  border-radius: 1.25rem;
+
+  &__heading {
+    font-family: Courgette;
+    color: #fdfcfa;
+    font-size: 2.5rem;
+    text-shadow: 0.2rem 0.2rem #2c2f33;
   }
   &__text {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
+    font-family: Rubik;
+    width: 22.2rem;
+    padding: 1rem;
     animation-name: menucard__textanim;
     animation-duration: 1500ms;
     animation-fill-mode: forwards;
-    text-overflow: ellipsis;
-    height: 5.6rem;
-    width: 17.5rem;
-    font-size: 0.7rem;
-    padding: 0 0 0.75rem 1rem;
-    margin: 1rem 0;
   }
-  &__text h2 {
-    line-height: 1.5rem;
+
+  &__text--heading {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #772668;
   }
-  &__text p {
-    padding-top: 0.5rem;
-    line-height: 1.5rem;
+
+  &__text--description {
+    font-size: 1.3rem;
+    color: #2c2f33;
   }
   &__pricecheck-box {
     display: flex;
     cursor: pointer;
-    transition-property: transform;
     font-size: 1.5rem;
-    transition-duration: 500ms;
-    transform: translateX(6rem);
-  }
-  &__pricecheck-box:hover {
-    display: flex;
-    transform: translateX(0);
-  }
-  &__pricecheck-box:hover .menucard__checkbox-icon {
-    display: flex;
-    animation: menucard__circlecheckanim;
-    animation-duration: 1000ms;
-  }
-  &__price {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     animation-name: menucard__textanim;
     animation-duration: 1500ms;
     animation-fill-mode: forwards;
+    transition: all 0.5s;
+    transform: translateY(20rem);
+  }
+
+  &__price {
+    display: flex;
+    font-family: Rubik;
+    align-items: center;
+    font-size: 1.5rem;
     width: 4rem;
+    transform: translateX(5rem);
+    animation-fill-mode: forwards;
+    transition: all 0.5s;
+    cursor: pointer;
   }
-  &__checkbox {
+
+  &__check {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 6rem;
-    height: 8rem;
-    background-color: #99e2d0;
+    justify-content: center;
+    color: #772668;
+    background-color: #a696df;
+    transform: translateX(5rem);
+    font-size: 2.2rem;
+    transition: all 0.5s;
+    width: 5rem;
   }
-  &__checkbox-icon {
+
+  /* Menu Pages - menu card hover animations */
+
+  &__pricecheck-box:hover .menucard__price {
+    transform: translateX(0rem);
+  }
+  &__pricecheck-box:hover .menucard__check {
+    transform: translateX(0.2rem);
+  }
+
+  &__pricecheck-box:hover .menucard__check-icon {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    font-size: 2.25rem;
+    animation: menucard__check_anim;
+    animation-duration: 1000ms;
   }
+
   &__text--maindish {
-    transform: translateY(7rem);
+    transform: translateY(8rem);
     animation-delay: 750ms;
   }
-  &__price--maindish {
-    transform: translateY(6.5rem);
+  &__pricecheck-box--maindish {
+    transform: translateY(8rem);
     animation-delay: 750ms;
   }
   &__text--desserts {
-    transform: translateY(7rem);
+    transform: translateY(8rem);
     animation-delay: 1500ms;
   }
-  &__price--desserts {
+  &__pricecheck-box--desserts {
     transform: translateY(6.5rem);
     animation-delay: 1500ms;
   }
 }
-
-/*END MENU CARDS FOR MENU PAGES*/
-
-/*START ORDER BUTTON*/
-
-.orderButton {
-  margin: 0 auto;
-  width: 15rem;
-  height: 4rem;
-  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
-  box-shadow: 0.3rem 0.3rem 0.5rem 0.3rem #dddcdc;
-  border-radius: 3rem;
-  &:hover {
-    cursor: pointer;
-  }
-  &-box {
-    width: 100%;
-    height: 8rem;
-    max-width: 100%;
-    margin: 0 auto;
-    background-color: #f2f2f2;
-  }
-  &__text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    color: #ffffff;
-    height: 4rem;
-  }
-}
-/*END ORDER BUTTON*/

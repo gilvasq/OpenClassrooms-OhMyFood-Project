@@ -1,197 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/67aa62cd16.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Oh My Food</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
-    <script src="https://kit.fontawesome.com/67aa62cd16.js" crossorigin="anonymous"></script>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- begin header  -->
 
-    <!-- Begin Intro PreLoader Animation Elements -->
-
-    <div class="spinnerbox">
-        <div class="spinnerbox__graphic"><i class="fas fa-spinner"></i></div>
-    </div>
-
-    <!-- End Intro PreLoader Animation Elements -->
-
-    <!-- Begin Main Body Elements -->
-
-    <!-- Begin Header Elements -->
-
-    <header>
-
-        <div class="header__logobox">
-            <img class="header__logobox-logo" src="images/ohmyfood.png" alt="Main Logo">
-        </div>
-
-        <div class="header__locationbox">
-            <div class="header__locationbox-mapmarker"><i class="fas fa-map-marker-alt" alt="Location marker"></i></div>
-            <div><p>Paris, Belleville</p></div>
-        </div>
-
+    <header class="header-section">
+      <div class="logo-box">
+        <img class="logo-box__logo" src="./images/ohmyfood.png" alt="logo" />
+      </div>
     </header>
 
-    <!-- End Header Elements -->
+    <!-- end header  -->
 
-    <!-- Begin Section 1 Book Menu Elements -->
+    <main class="main-section">
+      <!-- begin book menu section  -->
+      <section class="book-menu-section">
+        <div class="location-box">
+          <div class="location-box__icon">
+            <i class="fas fa-map-marker-alt" alt="Location marker"></i>
+          </div>
+          <div class="location-box__text">Paris, Belleville</div>
+        </div>
+        <h3 class="book-header">Book your preferred menu</h3>
 
-        <section class="section-one">
+        <div class="book-menu-box">
+          <div class="book-menu-text">
+            Discover your favorite cuisines with our custom selection of fine
+            dining options
+          </div>
+          <a href="#restaurants">
+          <div class=" btn btn__explore-rest">Explore our restaurants</div>
+        </a>
+        </div>
+      </section>
 
-            <div class="bookmenubox">
-                <div class="bookmenubox__text">
-                <h1>Book the menu you like</h1>
-                <p>Discover top-of-the-art restaurants we picked for you</p>
-                </div>
+      <!-- end book menu section  -->
 
-                <div class="gradientbutton">
-                    <div class="gradientbutton__text">Explore our restaurants</div>
-                </div>
+      <!-- begin how it works section  -->
+      <section class="how-it-works-section">
+        <h3 class="how-it-works-header">How it Works</h3>
+        <div class="container">
+          <div class="card-how">
+            <div class="card-how-number">1</div>
+            <div class="card-how-icon">
+              <i class="fas fa-mobile-alt" alt="Mobile phone icon"></i>
             </div>
-
-        </section>
-
-    <!-- End Section 1 Book Menu Elements -->
-
-    <!-- Begin Section 2 Book How it Works Elements -->
-
-        <section class="section-two">
-            <div class="howitworksbox">
-
-                <div class="howitworksbox__header"><h1>How it works</h1></div>
-                
-                <div class="shadowboxNarrow">
-                    <div class="shadowboxNarrow__num"><img src="images/circle_1_purp.svg" alt="Circle number 1"></div>
-                    <div class="shadowboxNarrow__icon--phone"><i class="fas fa-mobile-alt" alt="Mobile phone icon"></i></div>
-                    <div class="shadowboxNarrow__text">Choose a restaurant</div>
-                </div>
-                
-                <div class="shadowboxNarrow">
-                    <div class="shadowboxNarrow__num"><img src="images/circle_2_purp.svg" alt="Circle number 2"></div>
-                    <div class="shadowboxNarrow__icon"><i class="fas fa-list" alt="Menu icon"></i></div>
-                    <div class="shadowboxNarrow__text">Create your menu</div>
-                </div>
-                <div class="shadowboxNarrow">
-                    <div class="shadowboxNarrow__num"><img src="images/circle_3_purp.svg" alt="Circle number 3"></div>
-                    <div class="shadowboxNarrow__icon"><i class="fas fa-store" alt="Restaurant icon"></i></div>
-                    <div class="shadowboxNarrow__text">Go enjoy it at the restaurant</div>
-                </div>
-
+            <div class="card-how-text">Choose a restaurant!</div>
+          </div>
+          <div class="card-how">
+            <div class="card-how-number">2</div>
+            <div class="card-how-icon">
+              <i class="fas fa-list" alt="Menu icon"></i>
             </div>
-
-        </section>
-
-    <!-- End Section 2 Book – How it Works Elements -->
-
-    <!-- Begin Section 3 Restaurant Link Elements -->
-
-        <section class="section-three">
-            <div class="restaurantsbox">
-
-                <div class="restaurantsbox__header"><h1>Restaurants</h1></div>
-
-
-                <div class="shadowboxLarge">
-
-                    <a href="fullpalette.html">
-                    <div><img class="shadowboxLarge__photo" src="images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="The Full Palette"></div>
-                    <div class="shadowboxLarge__caption-box"><div class="shadowboxLarge__captiontext"><h2>The Full Palette</h2>
-                    <p>New York</p></div>
-                    <div class="shadowboxLarge__captiongradheart"><img class="shadowboxLarge__captionheartsvg" src="images/heart-regular_gradient.svg" alt="Gradient heart"></div>
-                    <div class="shadowboxLarge__captionheart"><img class="shadowboxLarge__captionheartsvg" src="images/heart-regular_gradient_remol.svg" alt="Gradient heart no outline"></div>
-                </div>
-                </a>
-                </div>
-
-                <div class="shadowboxLarge">
-
-                    <a href="enchanted.html">
-                    <div><img class="shadowboxLarge__photo" src="images/stil-u2Lp8tXIcjw-unsplash.jpg" alt="The Enchanted Plate"></div>
-                    <div class="shadowboxLarge__caption-box"><div class="shadowboxLarge__captiontext"><h2>The Enchanted Plate</h2>
-                    <p>New York</p></div>
-                    <div class="shadowboxLarge__captiongradheart"><img class="shadowboxLarge__captionheartsvg" src="images/heart-regular_gradient.svg" alt="Gradient heart"></div>
-                    <div class="shadowboxLarge__captionheart"><img class="shadowboxLarge__captionheartsvg" src="images/heart-regular_gradient_remol.svg" alt="Gradient heart no outline"></div>
-                </div>
-
-                </a>
-                </div>
-
-                <div class="shadowboxLarge">
-
-                    <a href="bastille.html">
-                    <div><img class="shadowboxLarge__photo" src="images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Bastille"></div>
-                    <div class="shadowboxLarge__caption-box"><div class="shadowboxLarge__captiontext"><h2>Bastille</h2>
-                    <p>New York</p></div>
-                    <div class="shadowboxLarge__captiongradheart"><img class="shadowboxLarge__captionheartsvg" src="images/heart-regular_gradient.svg" alt="Gradient heart"></div>
-                    <div class="shadowboxLarge__captionheart"><img class="shadowboxLarge__captionheartsvg" src="images/heart-regular_gradient_remol.svg" alt="Gradient heart no outline"></div>
-                </div>
-
-                </a>
-                </div>
-
-                <div class="shadowboxLarge">
-
-                    <a href="legourm.html">
-                    <div><img class="shadowboxLarge__photo" src="images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le Gourmand"></div>
-                    <div class="shadowboxLarge__caption-box"><div class="shadowboxLarge__captiontext"><h2>Le Gourmand</h2>
-                    <p>New York</p></div>
-                    <div class="shadowboxLarge__captiongradheart"><img class="shadowboxLarge__captionheartsvg" src="images/heart-regular_gradient.svg" alt="Gradient heart"></div>
-                    <div class="shadowboxLarge__captionheart"><img class="shadowboxLarge__captionheartsvg" src="images/heart-regular_gradient_remol.svg" alt="Gradient heart no outline"></div>
-                 </div>
-                
-                </a>
-                </div>
-
-            
-
-        </section>
-
-    <!-- End Section 3 Restaurant Link Elements -->
-
-
-     <!-- Begin Section 4 Footer Elements -->
-
-        <section class="section-four">
-            <div class="footer">
-
-                <div class="footerbox">
-                
-                    <div class="footerbox__mainLogo"><img src="images/ohmyfood@2x_wt.svg" alt="footer logo"></div>
-
-                <div class="footerbox__suggiconstext">
-                    
-                    <div class=footerbox__suggiconstext-utensils><i class="fas fa-utensils" alt="Utensils icon"></i></div><div class="footerbox__sugiconstext-suggest">Suggest a restaurant</div>
-                
-                </div>
-
-                <div class="footerbox__partnicontext">
-
-                    <div class="footerbox__partnicontext-handshake"><i class="fas fa-hands-helping" alt="Handshake icon"></i> </div><div class="footerbox__parnticontext-partner">Become a partner</div>
-
-                </div>
-
-                <div class="footerbox__legalcontact"><p>Legal</p> <p>Contact</p></div>
-
-                </div>
-
-                
+            <div class="card-how-text">Create your menu!</div>
+          </div>
+          <div class="card-how">
+            <div class="card-how-number">3</div>
+            <div class="card-how-icon">
+              <i class="fas fa-store" alt="Restaurant icon"></i>
             </div>
+            <div class="card-how-text">Stop in and enjoy!</div>
+          </div>
+        </div>
+      </section>
 
+      <!-- end how it works section  -->
 
-        </section>
+      <!-- begin restaurants section  -->
 
+      <section class="restaurants-section" id="restaurants">
+        <h3 class="restaurants-header">Featured Restaurants</h3>
+        <div class="container">
+          <!-- begin card 1  -->
+          <a href="fullpalette.html">
+            <div class="card-restaurant">
+              <div class="card-restaurant-img-box">
+                <img
+                  class="card-restaurant-img"
+                  src="/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                  alt="Restaurant Photo"
+                />
+              </div>
+              <div class="card-restaurant-caption">
+                <div class="card-restaurant-caption-text">
+                  <h4>The Full Palette</h4>
+                  <p class="card-restaurant-caption-grey">New York</p>
+                </div>
+                <div class="card-restaurant-caption-heart-ol">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                    />
+                  </svg>
+                </div>
+                <div class="card-restaurant-caption-heart">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </a>
 
-    </div>
-    
-    
-</body>
+          <!-- begin card 2  -->
 
+          <a href="enchanted.html">
+            <div class="card-restaurant">
+              <div class="card-restaurant-img-box">
+                <img
+                  class="card-restaurant-img"
+                  src="/images/stil-u2Lp8tXIcjw-unsplash.jpg"
+                  alt="Restaurant Photo"
+                />
+              </div>
+              <div class="card-restaurant-caption">
+                <div class="card-restaurant-caption-text">
+                  <h4>The Enchanted Plate</h4>
+                  <p class="card-restaurant-caption-grey">New York</p>
+                </div>
+                <div class="card-restaurant-caption-heart-ol">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                    />
+                  </svg>
+                </div>
+                <div class="card-restaurant-caption-heart">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </a>
 
+          <!-- begin card 3  -->
+          <a href="bastille.html">
+            <div class="card-restaurant">
+              <div class="card-restaurant-img-box">
+                <img
+                  class="card-restaurant-img"
+                  src="/images/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                  alt="Restaurant Photo"
+                />
+              </div>
+              <div class="card-restaurant-caption">
+                <div class="card-restaurant-caption-text">
+                  <h4>Bastille</h4>
+                  <p class="card-restaurant-caption-grey">New York</p>
+                </div>
+                <div class="card-restaurant-caption-heart-ol">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                    />
+                  </svg>
+                </div>
+                <div class="card-restaurant-caption-heart">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- begin card 4  -->
+
+          <a href="legourm.html">
+          <div class="card-restaurant">
+            <div class="card-restaurant-img-box">
+              <img
+                class="card-restaurant-img"
+                src="/images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                alt="Restaurant Photo"
+              />
+            </div>
+            <div class="card-restaurant-caption">
+              <div class="card-restaurant-caption-text">
+                <h4>Le Gourmand</h4>
+                <p class="card-restaurant-caption-grey">New York</p>
+              </div>
+              <div class="card-restaurant-caption-heart-ol">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                  />
+                </svg>
+              </div>
+              <div class="card-restaurant-caption-heart">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        </a>
+      </section>
+
+      <!-- end restaurants section  -->
+    </main>
+
+    <!-- begin footer section  -->
+
+    <footer class="footer-section">
+      <div class="footer-section__top-bar">&nbsp;</div>
+      <div class="footer-container">
+        <div class="footer-box">
+          <img class="footer__logo" src="./images/ohmyfood.png" alt="logo" />
+        </div>
+        <div class="footer__icon-box">
+          <div class="footer__icon">
+            <i class="fas fa-utensils" alt="Utensils icon"></i>
+          </div>
+          Suggest a restaurant
+        </div>
+        <div class="footer__icon-box">
+          <div class="footer__icon">
+            <i class="fas fa-hands-helping" alt="Handshake icon"></i>
+          </div>
+          Become a partner
+        </div>
+        <div class="footer__text">Legal Information</div>
+        <div class="footer__text">Contact Us</div>
+      </div>
+    </footer>
+
+    <!-- end footer section  -->
+  </body>
 </html>
