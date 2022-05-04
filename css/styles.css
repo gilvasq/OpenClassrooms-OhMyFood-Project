@@ -146,6 +146,7 @@ body {
     border-radius: 50%;
     border: 3px solid #fdfcfa;
     box-shadow: 0 0 1rem #bdb5d4;
+    text-shadow: 0.2rem 0.2rem #2c2f33;
     width: 4.5rem;
     height: 4.5rem; }
   .card-how-icon {
