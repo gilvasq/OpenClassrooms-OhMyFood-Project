@@ -479,7 +479,7 @@ body {
     flex-direction: column;
     background-color: #ffffff;
     text-align: center;
-    padding: 0 0rem 0rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
     width: 30rem;
     height: 32.5rem;
     border-left: 3px solid #e0d7fc;
@@ -490,7 +490,7 @@ body {
     box-shadow: 0 0 2rem rgba(0, 0, 0, 0.4); }
   .menuhead__arrowlogo-box {
     display: flex;
-    align-items: center; }
+    justify-content: center; }
   .menuhead__arrow-box {
     display: flex;
     width: 4.5rem;
@@ -498,6 +498,8 @@ body {
   .menuhead__arrow {
     width: 2rem; }
   .menuhead__logo-box {
+    display: flex;
+    justify-content: center;
     width: 25rem; }
   .menuhead__logo {
     padding: 0.5rem 0.5rem 0.5rem 0rem;
