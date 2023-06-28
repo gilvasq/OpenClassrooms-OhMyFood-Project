@@ -1,0 +1,142 @@
+// Restaurant menu pages - header logo photo graphic
+
+.menuhead {
+  &__full {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 0 0rem 0rem 0rem;
+    width: 30rem;
+    height: 32.5rem;
+
+    border-left: 3px solid #e0d7fc;
+    border-right: 3px solid #e0d7fc;
+    border-bottom: 3px solid #e0d7fc;
+    border-bottom-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.4);
+  }
+
+  &__arrowlogo-box {
+    display: flex;
+
+    align-items: center;
+  }
+
+  &__arrow-box {
+    display: flex;
+
+    width: 4.5rem;
+    padding: 1rem 0 1rem 1rem;
+  }
+
+  &__arrow {
+    width: 2rem;
+  }
+
+  &__logo-box {
+    width: 25rem;
+  }
+
+  &__logo {
+    padding: 0.5rem 0.5rem 0.5rem 0rem;
+    width: 23.5rem;
+  }
+
+  &__photo-box {
+    overflow: hidden;
+    height: 20rem;
+  }
+
+  &__photo {
+    width: 100%;
+  }
+
+  &__photo-box--ench {
+    position: relative;
+    overflow: hidden;
+    height: 20rem;
+  }
+
+  &__photo--ench {
+    position: absolute;
+    width: 100%;
+    bottom: -8rem;
+    left: 0;
+  }
+
+  /* Menu Pages - restaurant name */
+
+  &__restname {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e0d7fc;
+
+    border-left: 3px solid #e0d7fc;
+    border-right: 3px solid #e0d7fc;
+    border-bottom: 3px solid #e0d7fc;
+
+    align-items: center;
+    border-bottom-right-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
+    height: 7.5rem;
+    width: 29.5rem;
+    padding: 0 1.5rem;
+    z-index: 20;
+  }
+
+  &__restname-heading {
+    font-family: "Shrikhand";
+    font-size: 2rem;
+  }
+
+  &__restname-heart {
+    width: 2.5rem;
+  }
+}
+
+/* Menu pages - hero image section */
+
+.menupage-hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 24rem;
+
+  background-image: linear-gradient(
+      rgba(253, 252, 250, 0.4),
+      rgba(253, 252, 250, 0.4)
+    ),
+    url("../images/MainHero_crop_2.jpg");
+  background-size: cover;
+  background-position: top;
+}
+
+/* Menu pages - menu section */
+
+.menu-section {
+  display: flex;
+  border-top: 2px solid #2c2f33;
+
+  align-items: center;
+  padding: 4.5rem 0;
+  width: 100vw;
+  height: auto;
+
+  background-image: linear-gradient(
+      rgba(94, 31, 83, 0.9),
+      rgba(94, 31, 83, 0.9)
+    ),
+    url("../images/spikes_dark.png");
+
+  &-column {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+    width: 30rem;
+  }
+}

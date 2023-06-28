@@ -4,311 +4,284 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bastille</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
       rel="stylesheet"
     />
-
     <script
       src="https://kit.fontawesome.com/67aa62cd16.js"
       crossorigin="anonymous"
     ></script>
+    <title>Oh My Food</title>
   </head>
   <body>
-    <!-- Begin Header Elements -->
+    <!-- begin header  -->
 
-    <header>
-      <div class="header__logoFullWidth">
-        <div class="header__logoFullWidth-centerbox">
+    <header class="header-section">
+      <div class="menuhead__full">
+        <div class="menuhead__arrowlogo-box">
           <a href="index.html">
-            <div class="header__logoFullWidth-homearrow">
-              <img src="images/arrow-left-solid.svg" alt="Homepage arrow" />
+            <div class="menuhead__arrow-box">
+              <img
+                class="menuhead__arrow"
+                src="images/arrow-left-solid.svg"
+                alt="Homepage arrow"
+              />
             </div>
           </a>
+
+          <div class="menuhead__logo-box">
+            <img
+              class="menuhead__logo"
+              src="./images/ohmyfood_newlogo.png"
+              alt="logo"
+            />
+          </div>
+        </div>
+
+        <div class="menuhead__photo-box">
           <img
-            class="header__logoFullWidth-logo"
-            src="images/ohmyfood.png"
-            alt="Header logo"
+            class="menuhead__photo"
+            src="./images/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+            alt=""
           />
         </div>
-      </div>
-
-      <div class="header__restpicbox">
-        <img
-          class="header__restpicbox-pic"
-          src="images/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-          alt="Bastille"
-        />
-
-        <div class="header__restpicbox-name">
-          <div class="header__restpicbox-text">Bastille</div>
-          <div class="header__restpicbox-heart">
-            <img src="images/heart-regular_outline.svg" alt="Heart icon" />
+        <div class="menuhead__restname">
+          <div class="menuhead__restname-heading">Bastille</div>
+          <div class="menuhead__restname-heart">
+            <img src="./images/heart-regular_outline.svg" alt="" />
           </div>
         </div>
       </div>
     </header>
 
-    <!-- End Header Elements -->
+    <!-- end header  -->
 
-    <!-- Begin Section 1 Column 1 Menu Elements -->
+    <main class="main-section">
+      <!-- begin hero image section  -->
+      <section class="menupage-hero-section">&nbsp;</section>
 
-    <section class="menusbox">
-      <div class="menusbox__wrap">
-        <div class="menusbox__columnbox">
-          <div class="menusbox__columnbox-column">
-            <div class="menusbox__header">
-              ENTREES
-              <div class="menusbox__header--greenline"></div>
-            </div>
+      <!-- end hero image section  -->
+
+      <!-- begin restaurants section  -->
+
+      <section class="menu-section">
+        <div class="container">
+          <!-- begin col 1  -->
+          <div class="menu-section-column">
+            <div class="menucard__heading">Entrees</div>
             <div class="menucard">
-              <div class="menucard-box">
-                <div class="menucard__text">
-                  <h2>Citrus Squid Carpaccio</h2>
-                  <p>with orange zest</p>
+              <div class="menucard__text">
+                <div class="menucard__text--heading">
+                  Citrus Squid Carpaccio
                 </div>
-                <div class="menucard__pricecheck-box">
-                  <div class="menucard__price"><b>22&euro;</b></div>
-                  <div class="menucard__checkbox">
-                    <div class="menucard__checkbox-icon">
-                      <i class="fas fa-check-circle"></i>
-                    </div>
+                <div class="menucard__text--description">with orange zest</div>
+              </div>
+              <div class="menucard__pricecheck-box">
+                <div class="menucard__price"><b>22&euro;</b></div>
+                <div class="menucard__check">
+                  <div class="menucard__check-icon">
+                    <i class="fas fa-check-circle"></i>
                   </div>
                 </div>
               </div>
             </div>
-
             <div class="menucard">
-              <div class="menucard-box">
-                <div class="menucard__text">
-                  <h2>Grandmother's Vegetable Soup</h2>
-                  <p>Carrots, parsnips, Jerusalem artichoke</p>
+              <div class="menucard__text">
+                <div class="menucard__text--heading">
+                  Grandmother's Vegetable Soup
                 </div>
-                <div class="menucard__pricecheck-box">
-                  <div class="menucard__price"><b>35&euro;</b></div>
-                  <div class="menucard__checkbox">
-                    <div class="menucard__checkbox-icon">
-                      <i class="fas fa-check-circle"></i>
-                    </div>
+                <div class="menucard__text--description">
+                  Carrots, parsnips, Jerusalem artichoke
+                </div>
+              </div>
+              <div class="menucard__pricecheck-box">
+                <div class="menucard__price"><b>35&euro;</b></div>
+                <div class="menucard__check">
+                  <div class="menucard__check-icon">
+                    <i class="fas fa-check-circle"></i>
                   </div>
                 </div>
               </div>
             </div>
-
             <div class="menucard">
-              <div class="menucard-box">
-                <div class="menucard__text">
-                  <h2>Onion Soup</h2>
-                  <p>Revisited</p>
-                </div>
-                <div class="menucard__pricecheck-box">
-                  <div class="menucard__price"><b>20&euro;</b></div>
-                  <div class="menucard__checkbox">
-                    <div class="menucard__checkbox-icon">
-                      <i class="fas fa-check-circle"></i>
-                    </div>
-                  </div>
-                </div>
+              <div class="menucard__text">
+                <div class="menucard__text--heading">Onion Soup</div>
+                <div class="menucard__text--description">Revisited</div>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- End Section 1 Column 1 Menu Elements -->
-
-        <!-- Begin Section 2 Column 1 Menu Elements -->
-
-        <div class="menusbox__columnbox">
-          <div class="menusbox__columnbox-column">
-            <div class="menusbox__header">
-              MAIN DISH
-              <div class="menusbox__header--greenline"></div>
-            </div>
-            <div class="menucard">
-              <div class="menucard-box">
-                <div class="menucard__text menucard__text--maindish">
-                  <h2>Scallops</h2>
-                  <p>with mashed parsnip</p>
-                </div>
-                <div class="menucard__pricecheck-box">
-                  <div class="menucard__price menucard__price--maindish">
-                    <b>40&euro;</b>
-                  </div>
-                  <div class="menucard__checkbox">
-                    <div class="menucard__checkbox-icon">
-                      <i class="fas fa-check-circle"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="menucard">
-              <div class="menucard-box">
-                <div class="menucard__text menucard__text--maindish">
-                  <h2>Magret de canard</h2>
-                  <p>with mashed potatoes</p>
-                </div>
-                <div class="menucard__pricecheck-box">
-                  <div class="menucard__price menucard__price--maindish">
-                    <b>35&euro;</b>
-                  </div>
-                  <div class="menucard__checkbox">
-                    <div class="menucard__checkbox-icon">
-                      <i class="fas fa-check-circle"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="menucard">
-              <div class="menucard-box">
-                <div class="menucard__text menucard__text--maindish">
-                  <h2>Game Hen</h2>
-                  <p>with vegetable gnocchis</p>
-                </div>
-                <div class="menucard__pricecheck-box">
-                  <div class="menucard__price menucard__price--maindish">
-                    <b>44&euro;</b>
-                  </div>
-                  <div class="menucard__checkbox">
-                    <div class="menucard__checkbox-icon">
-                      <i class="fas fa-check-circle"></i>
-                    </div>
+              <div class="menucard__pricecheck-box">
+                <div class="menucard__price"><b>20&euro;</b></div>
+                <div class="menucard__check">
+                  <div class="menucard__check-icon">
+                    <i class="fas fa-check-circle"></i>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- End Section 2 Column 2 Menu Elements -->
-
-        <!-- Begin Section 2 Column 3 Menu Elements -->
-
-        <div class="menusbox__columnbox">
-          <div class="menusbox__columnbox-column">
-            <div class="menusbox__header">
-              DESSERTS
-              <div class="menusbox__header--greenline"></div>
-            </div>
+          <!-- begin col 2  -->
+          <div class="menu-section-column">
+            <div class="menucard__heading">Main Dish</div>
             <div class="menucard">
-              <div class="menucard-box">
-                <div class="menucard__text menucard__text--desserts">
-                  <h2>Floral Ice Cream</h2>
-                  <p>with hazelnut butter</p>
+              <div class="menucard__text menucard__text--maindish">
+                <div class="menucard__text--heading">Scallops</div>
+                <div class="menucard__text--description">
+                  with mashed parsnip
                 </div>
-                <div class="menucard__pricecheck-box">
-                  <div class="menucard__price menucard__price--desserts">
-                    <b>18&euro;</b>
-                  </div>
-                  <div class="menucard__checkbox">
-                    <div class="menucard__checkbox-icon">
-                      <i class="fas fa-check-circle"></i>
-                    </div>
+              </div>
+              <div
+                class="menucard__pricecheck-box menucard__pricecheck-box--maindish"
+              >
+                <div class="menucard__price"><b>40&euro;</b></div>
+                <div class="menucard__check">
+                  <div class="menucard__check-icon">
+                    <i class="fas fa-check-circle"></i>
                   </div>
                 </div>
               </div>
             </div>
-
             <div class="menucard">
-              <div class="menucard-box">
-                <div class="menucard__text menucard__text--desserts">
-                  <h2>Chocolate Lava Cake</h2>
-                  <p>Revisited</p>
+              <div class="menucard__text menucard__text--maindish">
+                <div class="menucard__text--heading">Magret de canard</div>
+                <div class="menucard__text--description">
+                  with mashed potatoes
                 </div>
-                <div class="menucard__pricecheck-box">
-                  <div class="menucard__price menucard__price--desserts">
-                    <b>22&euro;</b>
-                  </div>
-                  <div class="menucard__checkbox">
-                    <div class="menucard__checkbox-icon">
-                      <i class="fas fa-check-circle"></i>
-                    </div>
+              </div>
+              <div
+                class="menucard__pricecheck-box menucard__pricecheck-box--maindish"
+              >
+                <div class="menucard__price"><b>35&euro;</b></div>
+                <div class="menucard__check">
+                  <div class="menucard__check-icon">
+                    <i class="fas fa-check-circle"></i>
                   </div>
                 </div>
               </div>
             </div>
-
             <div class="menucard">
-              <div class="menucard-box">
-                <div class="menucard__text menucard__text--desserts">
-                  <h2>Napolean</h2>
-                  <p>with blueberries and marzipan</p>
+              <div class="menucard__text menucard__text--maindish">
+                <div class="menucard__text--heading">Game Hen</div>
+                <div class="menucard__text--description">
+                  with vegetable gnocchis
                 </div>
-                <div class="menucard__pricecheck-box">
-                  <div class="menucard__price menucard__price--desserts">
-                    <b>23&euro;</b>
-                  </div>
-                  <div class="menucard__checkbox">
-                    <div class="menucard__checkbox-icon">
-                      <i class="fas fa-check-circle"></i>
-                    </div>
+              </div>
+              <div
+                class="menucard__pricecheck-box menucard__pricecheck-box--maindish"
+              >
+                <div class="menucard__price"><b>44&euro;</b></div>
+                <div class="menucard__check">
+                  <div class="menucard__check-icon">
+                    <i class="fas fa-check-circle"></i>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
+          <!-- begin col 3  -->
+          <div class="menu-section-column">
+            <div class="menucard__heading">Desserts</div>
+            <div class="menucard">
+              <div class="menucard__text menucard__text--desserts">
+                <div class="menucard__text--heading">Floral Ice Cream</div>
+                <div class="menucard__text--description">
+                  with hazelnut butter
+                </div>
+              </div>
+              <div
+                class="menucard__pricecheck-box menucard__pricecheck-box--desserts"
+              >
+                <div class="menucard__price"><b>18&euro;</b></div>
+                <div class="menucard__check">
+                  <div class="menucard__check-icon">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menucard">
+              <div class="menucard__text menucard__text--desserts">
+                <div class="menucard__text--heading">Chocolate Lava Cake</div>
+                <div class="menucard__text--description">Revisited</div>
+              </div>
+              <div
+                class="menucard__pricecheck-box menucard__pricecheck-box--desserts"
+              >
+                <div class="menucard__price"><b>22&euro;</b></div>
+                <div class="menucard__check">
+                  <div class="menucard__check-icon">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menucard">
+              <div class="menucard__text menucard__text--desserts">
+                <div class="menucard__text--heading">Napolean</div>
+                <div class="menucard__text--description">
+                  with blueberries and marzipan
+                </div>
+              </div>
+              <div
+                class="menucard__pricecheck-box menucard__pricecheck-box--desserts"
+              >
+                <div class="menucard__price"><b>23&euro;</b></div>
+                <div class="menucard__check">
+                  <div class="menucard__check-icon">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn__order-menu-box">
+            <div class="btn btn__order-menu">Order</div>
+          </div>
         </div>
+      </section>
+
+      <!-- end restaurants section  -->
+    </main>
+
+    <!-- begin footer section  -->
+
+    <footer class="footer-section">
+      <div class="footer-section__top-bar">&nbsp;</div>
+      <div class="footer-container">
+        <div class="footer-box">
+          <img
+            class="footer__logo"
+            src="./images/ohmyfood_newlogo.png"
+            alt="logo"
+          />
+        </div>
+        <div class="footer__icon-box">
+          <div class="footer__icon">
+            <i class="fas fa-utensils" alt="Utensils icon"></i>
+          </div>
+          Suggest a restaurant
+        </div>
+        <div class="footer__icon-box">
+          <div class="footer__icon">
+            <i class="fas fa-hands-helping" alt="Handshake icon"></i>
+          </div>
+          Become a partner
+        </div>
+        <div class="footer__text">Legal Information</div>
+        <div class="footer__text">Contact Us</div>
       </div>
-    </section>
+    </footer>
 
-    <!-- End Section 1 Column 3 Menu Elements -->
-
-    <!-- Begin Section 2 Order Button Elements -->
-
-    <section class="section-two">
-      <div class="orderButton-box">
-        <div class="orderButton">
-          <div class="orderButton__text">Order</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- End Section 2 Order Button Elements -->
-
-    <!-- Begin Section 3 Footer Elements -->
-
-    <section class="section-three">
-      <div class="footer">
-        <div class="footerbox">
-          <div class="footerbox__mainLogo">
-            <img src="images/ohmyfood@2x_wt.svg" alt="footer logo" />
-          </div>
-
-          <div class="footerbox__suggiconstext">
-            <div class="footerbox__suggiconstext-utensils">
-              <i class="fas fa-utensils" alt="Utensils icon"></i>
-            </div>
-            <div class="footerbox__sugiconstext-suggest">
-              Suggest a restaurant
-            </div>
-          </div>
-
-          <div class="footerbox__partnicontext">
-            <div class="footerbox__partnicontext-handshake">
-              <i class="fas fa-hands-helping" alt="Handshake icon"></i>
-            </div>
-            <div class="footerbox__parnticontext-partner">Become a partner</div>
-          </div>
-
-          <div class="footerbox__legalcontact">
-            <p>Legal</p>
-            <p>Contact</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- End Section 5 Footer Elements -->
+    <!-- end footer section  -->
   </body>
 </html>

@@ -1,31 +1,11 @@
-@keyframes spinner_container_fadeout {
-  0% {
-    z-index: 50;
-    background-color: #ffffff;
-    opacity: 1;
-  }
+/* Menu Pages - menu card keyframe animations */
 
-  90% {
-    z-index: 50;
-    background-color: #ffffff;
-    opacity: 1;
-  }
-
-  100% {
-    z-index: 50;
-    background-color: #ffffff;
-    opacity: 0;
-  }
-}
-
-@keyframes spinner-load {
+@keyframes menucard__check_anim {
   0% {
     transform: rotate(0deg);
-    opacity: 1;
   }
   100% {
-    transform: rotate(3turn);
-    opacity: 1;
+    transform: rotate(360deg);
   }
 }
 
@@ -37,14 +17,5 @@
   100% {
     transform: translateY(0);
     opacity: 1;
-  }
-}
-
-@keyframes menucard__circlecheckanim {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }

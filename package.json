@@ -1,14 +1,14 @@
 {
-  "name": "ohmyfood_bem_sass",
+  "name": "ohmyfood_f",
   "version": "1.0.0",
-  "description": "Oh My Food Site",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/styles.css -w"
   },
-  "author": "Gil V",
+  "author": "GV",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^6.0.1"
+    "node-sass": "^7.0.1"
   }
 }
